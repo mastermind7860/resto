@@ -8,14 +8,13 @@ const Page=() =>{
     const [carttIds, setCardtIds]=useState(cardStorage?()=>cardStorage.map((items)=>{
         return items._id;
       }):[]);
+      const [cartData,setCartData]=useState();
     const [removeCartData,setRemoveCartData]=useState();
     const [total]=useState(()=>cardStorage.length==1?cardStorage[0].price:cardStorage.reduce((a,b)=>{
         return a.price+b.price
     }));
 
-    const removeFromeCart=(id)=>{
-  
-    }
+   
     return(
         <>
                <CustomerHeader
@@ -31,10 +30,10 @@ const Page=() =>{
                                     <div>{item.name}</div>
                                  
                                     <div className="description">{item.description}</div>
-                                    {
+                                    
                                        <button onClick={()=>removeFromeCart(item._id)}>Remove to cart</button>
                                      
-                                    }
+                                    
                                   
                                     
                                </div>
