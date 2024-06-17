@@ -1,0 +1,32 @@
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.header-wrapper ul{
+    display: flex;
+}
+.header-wrapper ul li{
+    list-style-type:none;
+    padding: 5px;
+}
+.header-wrapper ul li a{
+    text-decoration: none;
+}
+.header-wrapper ul li button{
+background-color: transparent;
+border: none;
+color: blueviolet;
+font-size: 18px;
+}
+.footer-wrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    font-size: 10px;
+}
+.error-message{
+    color: red;
+  
+}
